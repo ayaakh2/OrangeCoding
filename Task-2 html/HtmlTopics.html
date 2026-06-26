@@ -369,6 +369,230 @@
   </div>
 
   <!-- THE END OF AHMAD'S PART -->
+<hr width="60%" style="margin-top: 30px; margin-bottom: 30px;">
+<h3>Form Attributes</h3>
+
+  <div>
+    There are multiple Form Attributes such as : <br>
+    <ol>
+      <li><b>action:</b> it defines the action to be performed when the form is submitted. Usually, the form data is sent to a file on the server when the user clicks on the submit button. <br>
+        Example: <br>
+        &lt;form  action="/action_page.php"&gt;<br>
+        In this example, the form data is sent to a file called <b>"action_page.php"</b>.  
+      </li><br/>
+      <li><b>method:</b>  it specifies the HTTP method to be used when submitting the form data.
+      The form-data can be sent as URL variables (with <b>method="get"</b>)<br/>
+      Example:<br/>
+      &lt;form method="get"&gt;<br><br>
+      Or as HTTP post transaction (with method="post").<br/>
+      Example:<br/>
+      &lt;form method="post"&gt;<br><br>
+      The default HTTP method when submitting form data is <b>GET</b>. 
+      </li><br/>
+      
+      <li>
+        <b>target:</b> it specifies where to display the response that is received after submitting the form.<br/>
+        Example:<br/>
+      &lt;form target="_blank"&gt;<br><br>
+        The default value is<b>_self</b> which means that the response will open in the current window.
+
+      </li><br/>
+
+      <li>
+        <b>autocomplete:</b> it specifies whether a form should have autocomplete on or off.<br/>
+        When autocomplete is on, the browser automatically complete values based on values that the user has entered before.<br/>
+        Example:<br/>
+        &lt;form autocomplete="on"&gt;<br><br>
+      </li></ol>
+      </div>
+<hr width="60%" style="margin-top: 30px; margin-bottom: 30px;">
+<h3>Input Attributes</h3>
+<div>
+    There are multiple Input Attributes such as : <br>
+    <ol>
+      <li>
+        <b>value:</b> it specifies an initial value for an input field.<br/>
+        Example:<br/>
+        <label >Company name:</label>
+        <input type="text" value="Orange"><br>
+        "Orange" is the initial value, you can either submit it as it is, or replace it with your company name.
+      </li><br/>
+
+      <li>
+        <b>readonly: </b>it specifies that an input field is read-only and cannot be modified.<br/>
+        Example:<br/>
+        <label >Company name:</label>
+        <input type="text" value="Orange" readonly><br>
+        Note that the value of the this input will be sent when submitting the form.
+      </li><br/>
+
+      <li>
+        <b>disabled:</b> it specifies that an input field is unusable and un-clickable.<br/>
+        Example:<br/>
+        <label >Company name:</label>
+        <input type="text" value="Orange" disabled><br>
+        Note that the value of the this input will not be sent when submitting the form.
+      </li><br>
+
+      <li>
+        <b>size: </b>it specifies the visible width, in characters, of an input field.<br>
+        Example:<br>
+        <label >Company name:</label>
+        <input type="text" size="50" placeholder="this size is 50 char"><br>
+        <label >Company name:</label> <input type="text" size="10" placeholder="this is only 10"><br>
+        The default value for size is 20.
+      </li><br>
+
+      <li>
+        <b>maxlength: </b>it specifies the maximum number of characters allowed in an input field.<br>
+        Example:<br>
+        <label >Company name:</label>
+        <input type="text" maxlength="10" ><br>
+      </li><br>
+
+      <li>
+        <b>min / max: </b>specify the minimum and maximum values for an numerical input field.<br>
+        Example:<br>
+        <label >Number of team members (between 1 and 3):</label>
+        <input type="number" min="1" max="3"><br>
+      </li><br>
+      <li>
+        <b>multiple: </b>specifies that the user is allowed to enter more than one value in an input field.<br>
+        Example:<br>
+        <label >Select all task files:</label>
+        <input type="file" multiple><br>
+      </li><br>
+
+      <li>
+        <b>placeholder: </b>specifies a short hint that describes the expected value of an input field.<br>
+        Example:<br>
+        <label>Phone number: </label>
+        <input type="tel" placeholder="+962xxxxxxxxx"><br>
+        
+      </li><br>
+
+      <li>
+        <b>required: </b>specifies that an input field must be filled out before submitting the form.<br>
+        Example:<br>
+        <label>Password: </label>
+        <input type="password" required><br>
+      </li><br>
+    </ol>
+  </div>
+  <hr>
+
+  <!-- Module 5-->
+  <h1> Module 5 </h1>
+  <h3>Common Attributes</h3>
+  <div>
+    <ol>
+      <li>
+        <b>href: </b>it specifies the URL of the page the link goes to.<br>
+        Example:<br>
+        &lt;a href="https://selfcare.orange.jo/"&gt;<br>
+        <a href="https://selfcare.orange.jo/">Login to Orange.</a><br>
+      </li><br>
+
+      <li>
+        <b>src: </b>it specifies the URL of the media file.<br>
+        Example:<br>
+        &lt;video <b>src="سورة الفاتحة فيديو.mp4"</b> &gt;<br>
+        <video src="سورة الفاتحة فيديو.mp4" width="300px" height="200px" controls muted></video>
+        <br>
+      </li><br>
+
+      <li>
+        <b>width: </b>it specifies the width of the element.<br>
+        Example:<br>
+        &lt;img src="Orange logo.png" <b>width="100px"</b>&gt;<br>
+        <img src="Orange logo.png" width="100px"><br>
+      </li><br>
+      <li>
+        <b>height: </b> it specifies the height of the element.<br>
+        Example:<br>
+        &lt;img src="Orange logo.png" <b>height="200px"</b>&gt;<br>
+        <img src="Orange logo.png" height="200px"><br>
+      </li><br>
+    </ol>
+  </div>
+  <hr width="60%" style="margin-top: 30px; margin-bottom: 30px;">
+  <h3>Block vs Inline</h3>
+  <div>
+    <ul>
+      <li>
+        The &lt;div&gt; is a block container, it starts on a new line before and after, and we can explicitly set its width and height.<br>
+        Example:
+        <div>This is a new div without using &lt;br&gt; </div>
+        Here the div has ended.<br>
+      </li><br>
+      <li>
+        The &lt;span&gt; is an inline container, it stays on the same line as the surrounding content.<br>
+        Example:
+        <span>This is a new without using &lt;br&gt;</span>
+        Here the span has ended.<br>
+      </li>
+    </ul>
+  </div>
+<hr width="60%" style="margin-top: 30px; margin-bottom: 30px;">
+<h3> Semantic HTML</h3>    
+<div>
+  <ul>
+    <li>
+      The &lt;header&gt; element represents a container for introductory content.<br>
+      It typically contains:
+      <ul>
+        <li>
+          one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)
+        </li>
+        <li>
+          logo or icon
+        </li>
+        <li>
+          authorship information
+        </li>
+      </ul>
+    </li><br>
+
+    <li>
+      The &lt;nav&gt; tag defines a set of navigation links.
+    </li><br>
+
+    <li>
+      The &lt;section&gt; tag tells the browser that the content inside this block belongs together under a single topic.
+    </li><br>
+
+    <li>
+      The &lt;article&gt; tag is used for content that can stand completely on its own and make sense if shared elsewhere.
+    </li><br>
+
+    <li>
+      The &lt;aside&gt; tag defines content that is indirectly related to the main content around it.
+    </li><br>
+
+    <li>
+      The &lt;footer&gt; tag represents the footer for its nearest sectioning root or the page as a whole. It typically sits at the very bottom of a section or the entire webpage.
+    </li><br>
+  </ul>
+</div>
+
+<hr width="60%" style="margin-top: 30px; margin-bottom: 30px;">
+<h3>Accessibility and Readability</h3> 
+<div>
+  <ul>
+    <li>
+      <b>Semantic HTML is important:</b> because it makes code significantly easier to read, maintain, and debug. Looking at a wall of &lt;div&gt; tags makes it hard to see where the header ends and the sidebar begins. Semantic tags act like an organized outline.
+    </li><br>
+
+    <li>
+      <b>Accessibility benefits:</b> it Visually impaired users often rely on software called screen readers to read webpages aloud. When you use &lt;nav&gt;, a screen reader can tell the user: "Navigating to menu links."
+    </li>
+  </ul>
+</div>
+
+
+
+
+
 </body>
 
 </html>
